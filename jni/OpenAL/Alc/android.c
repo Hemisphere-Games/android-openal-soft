@@ -3,6 +3,8 @@
 #include "alMain.h"
 #include "apportable_openal_funcs.h"
 
+ApportableOpenALFuncs apportableOpenALFuncs; // This defines the variable
+
 static JavaVM *javaVM = NULL;
 JavaVM *alcGetJavaVM(void) {
 	return javaVM;
