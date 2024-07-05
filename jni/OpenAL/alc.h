@@ -1,8 +1,16 @@
 #ifndef AL_ALC_H
 #define AL_ALC_H
 
+#if defined(ANDROID)
+#include <jni.h>
+#endif
+
 #if defined(__cplusplus)
 extern "C" {
+#endif
+
+#if defined(ANDROID)
+JavaVM *alcGetJavaVM(void);
 #endif
 
 #if defined(AL_LIBTYPE_STATIC)

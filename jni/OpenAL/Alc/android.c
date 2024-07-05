@@ -16,7 +16,7 @@ jint JNI_OnLoad(JavaVM *vm, void *reserved) {
 		apportableOpenALFuncs.alc_android_set_java_vm(vm);
 	}
 	javaVM = vm;
-	return JNI_VERSION_1_4;
+	return JNI_VERSION_1_6;
 }
 
 void JNICALL JNI_OnUnload (JavaVM *vm, void *reserved)
